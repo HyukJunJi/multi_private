@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"mychat","l":"ChatHandler"},{"p":"mychat","l":"MyChatServer"},{"p":"mychat","l":"MyChatting"},{"p":"mychat","l":"NotSupportedNameException"}]

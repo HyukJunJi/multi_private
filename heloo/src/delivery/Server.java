@@ -4,15 +4,25 @@ import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.ArrayList;
-
-import mychat.ChatHandler;
-
+/*
+ * @author: 지혁준
+ * @version:0.1
+ * @since:2023.09.24
+ * 프로젝트명: 소켓통신을 활용한 배달앱 사용자와 요식업 판매자에 글 게시와 주문 프로그램
+ * 클래스명 : Server
+ * 내용: 서버
+ */
 public class Server extends Thread{
 	private ServerSocket server;
-	private ServerSocket shopserver;
+
 	private final int port= 1000;
 	
 	ArrayList<UserHandler> userList = new ArrayList<>();
+	/*
+	 * Server()
+	 * 생성시 ServerSocket 생성
+	 * 
+	 */
 	public Server() {
 		// TODO Auto-generated constructor stub
 		try {
@@ -26,6 +36,10 @@ public class Server extends Thread{
 		}
 		
 	}
+	/*
+	 * run()
+	 * while문을 돌면서 사용자와 판매자가 접속하는것을 기다림
+	 */
 	public void run() {
 		System.out.println("ready....");
 		while(true) {
